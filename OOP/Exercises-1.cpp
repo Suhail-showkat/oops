@@ -34,3 +34,4 @@ int main()
     generateTable();
     return 0;
 }
+
