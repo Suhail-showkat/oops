@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+void fact(int x, int & result)
+{
+    result = 1;
+    for(int i = 2; i <= x; i++)
+    {
+        result *= i;
+    }
+}
+
+int main()
+{
+    int n, r;
+    cout << "ENTER n : ";
+    cin >> n;
+    cout << "ENTER r : ";
+    cin >> r;
+    
+    int nfact, rfact, nrfact;
+    fact(n, nfact);
+    fact(r, rfact);
+    fact(n - r, nrfact);
+    
+    int formula = nfact / (rfact * nrfact); // formula for combination n! / (r!(n-r)!)
+    cout << "Combination (nCr): " << formula;
+    
+    return 0;
+}

@@ -19,6 +19,6 @@ int main ()
     int nfact= fact(n);
     int rfact=fact(r);
     int nrfact=fact(n-r);
-    int formula=nfact/(rfact*nrfact);
+    int formula=nfact/(rfact*nrfact);         //formula for combination n!/(r!(n-r)!)
     cout<<formula;
 }
